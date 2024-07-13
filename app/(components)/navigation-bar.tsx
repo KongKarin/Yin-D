@@ -4,20 +4,26 @@ import Link from "next/link";
 export default function NavigationBar() {
   return (
     <>
-      <nav className="navbar bg-yin-d-bg/80 w-full sticky z-10 top-0 backdrop-blur-sm border-b border-white">
+      <nav className="navbar bg-white/50 w-full sticky z-10 top-0 backdrop-blur-sm border-b rounded-b-md">
         <div className="flex-1">
-          <Image
-            src={logo}
-            alt={"Yin-D"}
-            width={106}
-            height={36}
-            className="min-w-[120px] btn btn-ghost"
-          />
+          <Link href={"/"}>
+            <Image
+              src={logo}
+              alt={"Yin-D"}
+              width={106}
+              height={36}
+              className="min-w-[120px] btn btn-ghost"
+            />
+          </Link>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1 text-white">
             <li className="hidden md:block ">
-              <Link href={"/"} scroll={true} className="link-accent text-white">
+              <Link
+                href={"/#yin_d"}
+                scroll={true}
+                className="link-accent text-white"
+              >
                 Home
               </Link>
             </li>

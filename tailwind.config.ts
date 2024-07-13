@@ -18,6 +18,31 @@ const config: Config = {
       },
     },
   },
+  daisyui: {
+    themes: [
+      {
+        "yin-d": {
+          primary: "#0EA5E9",
+
+          secondary: "#fff",
+
+          accent: "#1891C7",
+
+          neutral: "#000",
+
+          "base-bg": "#1D2329",
+
+          info: "#0000ff",
+
+          success: "#00ff00",
+
+          warning: "#00ff00",
+
+          error: "#ff0000",
+        },
+      },
+    ],
+  },
   plugins: [require("daisyui")],
 };
 export default config;
