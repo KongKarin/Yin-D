@@ -1,16 +1,16 @@
 import React from "react";
-import WritingFrontCard from "./postcard/writingFrontCard";
 import Link from "next/link";
+import PostCardLg from "./postcard/writingFrontCard";
 
 export default function WritingCard() {
   return (
-    <div className="h-screen p-10">
+    <div className="h-screen p-10 bg-gradient-radial">
       <div className="py-14 h-full flex flex-col justify-between ">
         <h2 className="text-white text-6xl font-semibold drop-shadow">
           Give a message
         </h2>
         <div className="mx-auto">
-          <WritingFrontCard />
+          <PostCardLg />
         </div>
         <div className="w-full flex justify-center">
           <Link href={"/#write"} scroll={true}>

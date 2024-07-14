@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { notoSansThai, roboto } from "./font";
-import ReturnToTopButton from "./(components)/returnToTopBtn";
+import ReturnToTopButton from "./(components)/utilities/returnToTopBtn";
 
 export const metadata: Metadata = {
   title: {

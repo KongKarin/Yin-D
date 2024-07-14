@@ -1,10 +1,11 @@
 import Image from "next/image";
 import logo from "@/public/logo/logo.svg";
 import Link from "next/link";
+import ScrollingIndicator from "./utilities/scrollingIndicators";
 export default function NavigationBar() {
   return (
     <>
-      <nav className="navbar bg-white/50 w-full sticky z-10 top-0 backdrop-blur-sm border-b rounded-b-md">
+      <nav className="navbar bg-yin-d-bg/50 w-full sticky z-10 top-0 backdrop-blur-sm border-b ">
         <div className="flex-1">
           <Link href={"/"}>
             <Image
@@ -19,11 +20,7 @@ export default function NavigationBar() {
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1 text-white">
             <li className="hidden md:block ">
-              <Link
-                href={"/#yin_d"}
-                scroll={true}
-                className="link-accent text-white"
-              >
+              <Link href={"/#yin_d"} scroll={true}>
                 Home
               </Link>
             </li>
@@ -74,6 +71,7 @@ export default function NavigationBar() {
             </li>
           </ul>
         </div>
+        <ScrollingIndicator />
       </nav>
     </>
   );
