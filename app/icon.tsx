@@ -21,7 +21,7 @@ export default function Icon() {
       // ImageResponse JSX element
 
       // eslint-disable-next-line @next/next/no-img-element
-      <img src={logoUrl} alt={"Yin-D"} width={24} height={32} />
+      <img src={logoUrl} alt={"Yin-D"} width={32} height={32} />
     ),
     // ImageResponse options
     {
